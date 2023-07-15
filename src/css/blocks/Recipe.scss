@@ -1,0 +1,129 @@
+h1 {
+  text-align: center;
+}
+
+.back {
+  width: 60px;
+  position: fixed;
+  top: 15px;
+  left: 30px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.recipe_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.recipe_header {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.70);
+  margin-bottom: 20px;
+}
+
+.recipe_image {
+  display: flex;
+  margin-right: 20px;
+
+  img {
+    height: 300px;
+    margin: auto;
+  }
+}
+
+.recipe_info {
+  flex: 1 0 300px;
+  margin-bottom: 20px;
+
+  label {
+    font-weight: bold;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+.recipe_tagline {
+  text-align: center;
+  font-style: italic;
+}
+
+.recipe_method {
+  flex: 1 0 300px;
+  margin-bottom: 20px;
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+.recipe_ingredients {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.70);
+  margin-bottom: 20px;
+}
+
+.recipe_ingredients_name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.recipe_ingredients_table {
+  margin-bottom: 10px;
+
+  table {
+    border-collapse: collapse;
+  }
+
+  td, th {
+    padding: 10px 50px 10px 0;
+  }
+
+  th {
+    padding-bottom: 0;
+  }
+
+  tr:not(:last-child) {
+    border-bottom: 1px solid black;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+}
+
+.food_pairing {
+  width: 100%;
+  margin-bottom: 20px;
+
+  label {
+    font-weight: bold;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+.brewers_tips {
+  margin-bottom: 20px;
+  width: 100%;
+
+  label {
+    font-weight: bold;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}

@@ -1,0 +1,264 @@
+h1 {
+  text-align: center;
+}
+
+.back {
+  width: 60px;
+  position: fixed;
+  top: 15px;
+  left: 30px;
+}
+.back:hover {
+  cursor: pointer;
+}
+
+.recipe_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.recipe_header {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.7);
+  margin-bottom: 20px;
+}
+
+.recipe_image {
+  display: flex;
+  margin-right: 20px;
+}
+.recipe_image img {
+  height: 300px;
+  margin: auto;
+}
+
+.recipe_info {
+  flex: 1 0 300px;
+  margin-bottom: 20px;
+}
+.recipe_info label {
+  font-weight: bold;
+}
+.recipe_info p {
+  margin: 5px 0;
+}
+
+.recipe_tagline {
+  text-align: center;
+  font-style: italic;
+}
+
+.recipe_method {
+  flex: 1 0 300px;
+  margin-bottom: 20px;
+}
+.recipe_method p {
+  margin: 5px 0;
+}
+
+.recipe_ingredients {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.7);
+  margin-bottom: 20px;
+}
+
+.recipe_ingredients_name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.recipe_ingredients_table {
+  margin-bottom: 10px;
+}
+.recipe_ingredients_table table {
+  border-collapse: collapse;
+}
+.recipe_ingredients_table td, .recipe_ingredients_table th {
+  padding: 10px 50px 10px 0;
+}
+.recipe_ingredients_table th {
+  padding-bottom: 0;
+}
+.recipe_ingredients_table tr:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+.recipe_ingredients_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.food_pairing {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.food_pairing label {
+  font-weight: bold;
+}
+.food_pairing p {
+  margin: 5px 0;
+}
+
+.brewers_tips {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.brewers_tips label {
+  font-weight: bold;
+}
+.brewers_tips p {
+  margin: 5px 0;
+}
+
+body {
+  margin: 15px;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+}
+
+.button {
+  display: inline;
+  border-radius: 5px;
+  padding: 7px 25px;
+}
+.button-delete {
+  background-color: red;
+  color: white;
+  position: fixed;
+  right: 5%;
+  bottom: 30px;
+}
+.button-delete:hover {
+  cursor: pointer;
+  background-color: rgb(215, 0, 0);
+}
+
+.beers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.beer {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.beer.highlighted {
+  box-shadow: 0 2px 8px rgba(0, 51, 255, 0.93), 0 4px 6px rgba(50, 40, 234, 0.2);
+}
+
+.beer_img {
+  display: flex;
+  width: 10%;
+  margin-right: 20px;
+}
+.beer_img:hover {
+  cursor: pointer;
+}
+.beer_img img {
+  max-height: 150px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.beer_content {
+  width: 50%;
+}
+
+.beer_title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.beer_title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.beer_tagline {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.beer_abv,
+.beer_ibu {
+  font-size: 12px;
+  color: #888;
+}
+
+.beer_ingredients {
+  width: 40%;
+}
+
+.beer_ingredients_title {
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.beer_ingredients_title:hover {
+  cursor: pointer;
+}
+.beer_ingredients_title::after {
+  content: "";
+  display: inline-block;
+  margin-left: 7px;
+  padding-top: 2px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: black transparent transparent transparent;
+}
+.beer_ingredients_title.active {
+  text-decoration: none;
+}
+.beer_ingredients_title.active::after {
+  position: relative;
+  top: -3px;
+  border-width: 0 4px 4px 4px;
+  border-color: transparent transparent black transparent;
+}
+
+.beer_ingredients_content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out, max-height 0.5s ease-in-out;
+}
+.beer_ingredients_content.visible {
+  opacity: 1;
+  max-height: 1000px;
+}
+
+.beer_ingredients_table {
+  font-size: 14px;
+}
+.beer_ingredients_table-type {
+  margin-bottom: 5px;
+}
+
+.beer_ingredients_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=App.css.map */

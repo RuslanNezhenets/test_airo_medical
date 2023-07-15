@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.recipe_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.recipe-image {
+  flex: 1 0 300px;
+  margin-right: 20px;
+  text-align: center;
+  height: 200px;
+}
+.recipe-image img {
+  height: 200px;
+  max-width: 100%;
+}
+
+.recipe_info {
+  flex: 1 0 300px;
+  margin-bottom: 20px;
+}
+
+.recipe_info p {
+  margin: 5px 0;
+}
+
+.recipe_info label {
+  font-weight: bold;
+}
+
+.recipe_method {
+  flex: 1 0 300px;
+  margin-bottom: 20px;
+}
+
+.recipe_method p {
+  margin: 5px 0;
+}
+
+.recipe_ingredients {
+  flex: 1 0 300px;
+  margin-bottom: 20px;
+}
+
+.recipe_ingredients p {
+  margin: 5px 0;
+}
+
+.food_pairing {
+  margin-bottom: 20px;
+}
+
+.food_pairing p {
+  margin: 5px 0;
+}
+
+.brewers_tips {
+  margin-bottom: 20px;
+}
+
+.brewers_tips p {
+  margin: 5px 0;
+}
+
+/*# sourceMappingURL=Recipe.css.map */
